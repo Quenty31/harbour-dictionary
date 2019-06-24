@@ -3,7 +3,8 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=harbour-wunderfitz
 Exec=harbour-wunderfitz
-Name=Wunderfitz
+Name=Dictionary
+Name[de]=Wörterbuch
 # translation example:
 # your app name in German locale (de)
 #
