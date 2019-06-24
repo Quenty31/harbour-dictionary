@@ -30,7 +30,6 @@
 #include "dictccimportermodel.h"
 #include "heinzelnissemodel.h"
 #include "dictionarymodel.h"
-#include "curiosity.h"
 
 int main(int argc, char *argv[])
 {
@@ -42,9 +41,6 @@ int main(int argc, char *argv[])
     ctxt->setContextProperty("dictionaryModel", &dictionaryModel);
     ctxt->setContextProperty("heinzelnisseModel", &dictionaryModel.heinzelnisseModel);
     ctxt->setContextProperty("dictCCImporterModel", &dictionaryModel.dictCCImporterModel);
-
-    Curiosity curiosity;
-    ctxt->setContextProperty("curiosity", &curiosity);
 
     view->setSource(SailfishApp::pathTo("qml/harbour-wunderfitz.qml"));
     view->show();
