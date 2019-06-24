@@ -25,6 +25,13 @@ ui_*.h
 Makefile*
 *build-*
 
+# Build files
+*.qm
+*.so.*
+src/harbour-wunderfitz
+documentation.list
+RPMS
+
 # QtCreator
 
 *.autosave
