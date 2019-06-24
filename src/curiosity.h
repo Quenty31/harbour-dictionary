@@ -22,7 +22,8 @@
 
 #include <QObject>
 #include <QSettings>
-#include "cloudapi.h"
+
+class QNetworkAccessManager;
 
 class Curiosity : public QObject
 {
@@ -41,22 +42,6 @@ public:
     Q_INVOKABLE void setUseCloud(const bool &useCloud);
     Q_INVOKABLE QString getTranslatedText();
 
-    CloudApi *getCloudApi();
-
-signals:
-    void translationSuccessful(const QString &text);
-    void translationError(const QString &errorMessage);
-    void ocrProgress(const int &percentCompleted);
-    void ocrError(const QString &errorMessage);
-    void ocrSuccessful();
-
-public slots:
-    void handleTranslationSuccessful(const QJsonArray &result);
-    void handleTranslationError(const QString &errorMessage);
-    void handleOcrProcessingSuccessful(const QString &fileName, const QJsonObject &result);
-    void handleOcrProcessingError(const QString &fileName, const QString &errorMessage);
-    void handleOcrProcessingStatus(const QString &fileName, qint64 bytesSent, qint64 bytesTotal);
-
 private:
     int captureOrientation;
     int captureOffset;
@@ -64,7 +49,6 @@ private:
     QString capturePath;
     QString translatedText;
     QSettings settings;
-    CloudApi *cloudApi;
 
     QNetworkAccessManager *networkAccessManager;
 

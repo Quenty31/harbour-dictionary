@@ -30,6 +30,20 @@
 #include <QRect>
 #include <QJsonObject>
 
+// from cloudapi.h
+#include <QObject>
+#include <QUrl>
+#include <QUrlQuery>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QNetworkAccessManager>
+#include <QList>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QVariantMap>
+#include <QFile>
+
 const char SETTINGS_SOURCE_LANGUAGE[] = "settings/sourceLanguage";
 const char SETTINGS_TARGET_LANGUAGE[] = "settings/targetLanguage";
 const char SETTINGS_USE_CLOUD[] = "settings/useCloud";
@@ -50,13 +64,6 @@ Curiosity::Curiosity(QObject *parent) : QObject(parent)
         qDebug() << "[Curiosity] Cleaning temporary files...";
         removeTemporaryFiles();
     }
-    this->cloudApi = new CloudApi(this->networkAccessManager, this);
-
-    connect(cloudApi, SIGNAL(ocrUploadSuccessful(QString,QJsonObject)), this, SLOT(handleOcrProcessingSuccessful(QString,QJsonObject)));
-    connect(cloudApi, SIGNAL(ocrUploadError(QString,QString)), this, SLOT(handleOcrProcessingError(QString,QString)));
-    connect(cloudApi, SIGNAL(ocrUploadStatus(QString,qint64,qint64)), this, SLOT(handleOcrProcessingStatus(QString,qint64,qint64)));
-    connect(cloudApi, SIGNAL(translateSuccessful(QJsonArray)), this, SLOT(handleTranslationSuccessful(QJsonArray)));
-    connect(cloudApi, SIGNAL(translateError(QString)), this, SLOT(handleTranslationError(QString)));
 }
 
 QString Curiosity::getTemporaryDirectoryPath()
@@ -87,7 +94,6 @@ void Curiosity::captureCompleted(const QString &path)
 {
     qDebug() << "[Curiosity] Capture completed" << path;
     this->capturePath = path;
-    this->processCapture();
 }
 
 QString Curiosity::getSourceLanguage()
@@ -114,123 +120,16 @@ void Curiosity::setTargetLanguage(const QString &targetLanguage)
 
 bool Curiosity::getUseCloud()
 {
-    return settings.value(SETTINGS_USE_CLOUD, false).toBool();
+    return false;
 }
 
 void Curiosity::setUseCloud(const bool &useCloud)
 {
-    qDebug() << "[Curiosity] Set use cloud" << useCloud;
-    settings.setValue(SETTINGS_USE_CLOUD, useCloud);
+    qDebug() << "[Curiosity] Set use cloud" << false << " / " << useCloud;
+    settings.setValue(SETTINGS_USE_CLOUD, false);
 }
 
 QString Curiosity::getTranslatedText()
 {
     return this->translatedText;
-}
-
-CloudApi *Curiosity::getCloudApi()
-{
-    return this->cloudApi;
-}
-
-void Curiosity::handleOcrProcessingSuccessful(const QString &fileName, const QJsonObject &result)
-{
-    qDebug() << "[Curiosity] Processing OCR result..." << fileName;
-    QJsonArray regionArray = result.value("regions").toArray();
-    QString completeText;
-    foreach (const QJsonValue &region, regionArray) {
-        QJsonArray lineArray = region.toObject().value("lines").toArray();
-        foreach (const QJsonValue &line, lineArray) {
-            QJsonArray wordArray = line.toObject().value("words").toArray();
-            foreach (const QJsonValue &word, wordArray) {
-                if (!completeText.isEmpty()) {
-                    completeText.append(" ");
-                }
-                completeText.append(word.toObject().value("text").toString());
-            }
-        }
-    }
-    qDebug() << completeText;
-    this->translatedText = completeText;
-    emit ocrSuccessful();
-    cloudApi->translate(completeText, this->getTargetLanguage());
-}
-
-void Curiosity::handleOcrProcessingError(const QString &fileName, const QString &errorMessage)
-{
-    qDebug() << "[Curiosity] OCR processing error..." << fileName << errorMessage;
-    emit ocrError(errorMessage);
-}
-
-void Curiosity::handleOcrProcessingStatus(const QString &fileName, qint64 bytesSent, qint64 bytesTotal)
-{
-    qDebug() << "[Curiosity] OCR processing status update" << fileName << bytesSent << bytesTotal;
-    if (bytesTotal == 0) {
-        return;
-    }
-    int percentCompleted = 100 * bytesSent / bytesTotal;
-    emit ocrProgress(percentCompleted);
-}
-
-void Curiosity::handleTranslationSuccessful(const QJsonArray &result)
-{
-    qDebug() << "[Curiosity] Processing translation result...";
-    emit translationSuccessful(result.at(0).toObject().value("translations").toArray().at(0).toObject().value("text").toString());
-}
-
-void Curiosity::handleTranslationError(const QString &errorMessage)
-{
-    qDebug() << "[Curiosity] Translation error..." << errorMessage;
-    emit translationError(errorMessage);
-}
-
-void Curiosity::processCapture()
-{
-    qDebug() << "[Curiosity] Processing capture...";
-    QImageReader imageReader;
-    imageReader.setFileName(this->capturePath);
-    QImage myImage = imageReader.read();
-    QMatrix transformationMatrix;
-    switch (this->captureOrientation) {
-    case 1:
-        // Portrait
-        transformationMatrix.rotate(90);
-        break;
-    case 2:
-        // Landscape
-        transformationMatrix.rotate(0);
-        break;
-    case 4:
-        // Portait Inverted
-        transformationMatrix.rotate(270);
-        break;
-    case 8:
-        // Landscape Inverted
-        transformationMatrix.rotate(180);
-        break;
-    default:
-        break;
-    }
-    myImage = myImage.transformed(transformationMatrix);
-    QRect imageDimensions = myImage.rect();
-    QImage finalImage;
-    if (this->captureOrientation == 2 || this->captureOrientation == 8) {
-        float offsetRatio = myImage.width() / this->captureViewfinderDimension;
-        imageDimensions.setLeft(this->captureOffset * offsetRatio);
-    } else {
-        float offsetRatio = myImage.height() / this->captureViewfinderDimension;
-        imageDimensions.setTop(this->captureOffset * offsetRatio);
-    }
-    qDebug() << imageDimensions;
-    finalImage = myImage.copy(imageDimensions);
-
-    // Maximum dimensions 4000x4000
-    if (finalImage.width() >= 4000) {
-        finalImage = finalImage.scaledToWidth(3999);
-    }
-    if (finalImage.height() >= 4000) {
-        finalImage = finalImage.scaledToHeight(3999);
-    }
-    finalImage.save(this->capturePath);
-    cloudApi->opticalCharacterRecognition(this->capturePath, this->getSourceLanguage());
 }

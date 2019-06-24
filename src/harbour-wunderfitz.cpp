@@ -31,7 +31,6 @@
 #include "heinzelnissemodel.h"
 #include "dictionarymodel.h"
 #include "curiosity.h"
-#include "cloudapi.h"
 
 int main(int argc, char *argv[])
 {
@@ -46,8 +45,6 @@ int main(int argc, char *argv[])
 
     Curiosity curiosity;
     ctxt->setContextProperty("curiosity", &curiosity);
-    CloudApi *cloudApi = curiosity.getCloudApi();
-    ctxt->setContextProperty("cloudApi", cloudApi);
 
     view->setSource(SailfishApp::pathTo("qml/harbour-wunderfitz.qml"));
     view->show();

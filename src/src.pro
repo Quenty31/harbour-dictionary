@@ -23,8 +23,7 @@ SOURCES += harbour-wunderfitz.cpp \
     dictionarymetadata.cpp \
     dictccword.cpp \
     dictionarysearchworker.cpp \
-    curiosity.cpp \
-    cloudapi.cpp
+    curiosity.cpp
 
 HEADERS += \
     heinzelnisseelement.h \
@@ -36,7 +35,5 @@ HEADERS += \
     dictionarymetadata.h \
     dictccword.h \
     dictionarysearchworker.h \
-    curiosity.h \
-    cloudapi.h \
-    cloudcredentials.h
+    curiosity.h
 
