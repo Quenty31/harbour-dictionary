@@ -3,8 +3,6 @@ LIBS += -lz -lquazip -L../quazip/quazip
 
 QT += sql core
 
-include(wagnis/wagnis.pri)
-
 DEPENDPATH += . ../quazip/quazip
 INCLUDEPATH += . ../quazip/quazip
 QMAKE_LFLAGS += -Wl,-rpath,\\$${LITERAL_DOLLAR}$${LITERAL_DOLLAR}ORIGIN/../share/harbour-wunderfitz/lib

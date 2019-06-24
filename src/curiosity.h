@@ -23,7 +23,6 @@
 #include <QObject>
 #include <QSettings>
 #include "cloudapi.h"
-#include "wagnis/wagnis.h"
 
 class Curiosity : public QObject
 {
@@ -43,7 +42,6 @@ public:
     Q_INVOKABLE QString getTranslatedText();
 
     CloudApi *getCloudApi();
-    Wagnis *getWagnis();
 
 signals:
     void translationSuccessful(const QString &text);
@@ -55,7 +53,7 @@ signals:
 public slots:
     void handleTranslationSuccessful(const QJsonArray &result);
     void handleTranslationError(const QString &errorMessage);
-    void handleOcrProcessingSuccessful(const QString &fileName, const QJsonObject &result);    
+    void handleOcrProcessingSuccessful(const QString &fileName, const QJsonObject &result);
     void handleOcrProcessingError(const QString &fileName, const QString &errorMessage);
     void handleOcrProcessingStatus(const QString &fileName, qint64 bytesSent, qint64 bytesTotal);
 
@@ -69,7 +67,6 @@ private:
     CloudApi *cloudApi;
 
     QNetworkAccessManager *networkAccessManager;
-    Wagnis *wagnis;
 
     void processCapture();
 
