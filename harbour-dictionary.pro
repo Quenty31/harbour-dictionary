@@ -1,6 +1,6 @@
 TEMPLATE = subdirs
 
-quazip_lib.file = quazip/quazip/wunderfitz-quazip.pro
+quazip_lib.file = quazip/quazip/dictionary-quazip.pro
 quazip_lib.target = quazip-lib
 
 app_src.subdir = src
@@ -9,11 +9,11 @@ app_src.depends = quazip-lib
 
 SUBDIRS = quazip_lib app_src
 
-OTHER_FILES += rpm/harbour-wunderfitz.changes.in \
-    rpm/harbour-wunderfitz.spec \
-    rpm/harbour-wunderfitz.yaml \
+OTHER_FILES += rpm/harbour-dictionary.changes.in \
+    rpm/harbour-dictionary.spec \
+    rpm/harbour-dictionary.yaml \
     translations/*.ts \
-    harbour-wunderfitz.desktop \
+    harbour-dictionary.desktop \
     qml/components/*.qml \
     qml/pages/*.qml \
     qml/*.qml
@@ -29,13 +29,13 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/harbour-wunderfitz-de.ts \
-     translations/harbour-wunderfitz-it.ts \
-     translations/harbour-wunderfitz-nl.ts \
-     translations/harbour-wunderfitz-sv.ts \
-     translations/harbour-wunderfitz-es.ts \
-     translations/harbour-wunderfitz-pl.ts \
-     translations/harbour-wunderfitz-hu.ts
+TRANSLATIONS += translations/harbour-dictionary-de.ts \
+     translations/harbour-dictionary-it.ts \
+     translations/harbour-dictionary-nl.ts \
+     translations/harbour-dictionary-sv.ts \
+     translations/harbour-dictionary-es.ts \
+     translations/harbour-dictionary-pl.ts \
+     translations/harbour-dictionary-hu.ts
 
 database.files = db
 database.path = /usr/share/$${TARGET}
@@ -49,34 +49,34 @@ images.path = /usr/share/$${TARGET}
 ICONPATH = /usr/share/icons/hicolor
 
 86.png.path = $${ICONPATH}/86x86/apps/
-86.png.files += icons/86x86/harbour-wunderfitz.png
+86.png.files += icons/86x86/harbour-dictionary.png
 
 108.png.path = $${ICONPATH}/108x108/apps/
-108.png.files += icons/108x108/harbour-wunderfitz.png
+108.png.files += icons/108x108/harbour-dictionary.png
 
 128.png.path = $${ICONPATH}/128x128/apps/
-128.png.files += icons/128x128/harbour-wunderfitz.png
+128.png.files += icons/128x128/harbour-dictionary.png
 
 172.png.path = $${ICONPATH}/172x172/apps/
-172.png.files += icons/172x172/harbour-wunderfitz.png
+172.png.files += icons/172x172/harbour-dictionary.png
 
 256.png.path = $${ICONPATH}/256x256/apps/
-256.png.files += icons/256x256/harbour-wunderfitz.png
+256.png.files += icons/256x256/harbour-dictionary.png
 
-wunderfitz.desktop.path = /usr/share/applications/
-wunderfitz.desktop.files = harbour-wunderfitz.desktop
+dictionary.desktop.path = /usr/share/applications/
+dictionary.desktop.files = harbour-dictionary.desktop
 
 INSTALLS += 86.png 108.png 128.png 172.png 256.png \
-            wunderfitz.desktop database gui images
+            dictionary.desktop database gui images
 
 DISTFILES += \
-    icons/108x108/harbour-wunderfitz.png \
-    icons/128x128/harbour-wunderfitz.png \
-    icons/172x172/harbour-wunderfitz.png \
-    icons/256x256/harbour-wunderfitz.png \
-    icons/86x86/harbour-wunderfitz.png \
+    icons/108x108/harbour-dictionary.png \
+    icons/128x128/harbour-dictionary.png \
+    icons/172x172/harbour-dictionary.png \
+    icons/256x256/harbour-dictionary.png \
+    icons/86x86/harbour-dictionary.png \
     images/background.png \
-    images/wunderfitz.png \
+    images/dictionary.png \
     qml/*.qml \
     pml/pages/*.qml \
     LICENSE \

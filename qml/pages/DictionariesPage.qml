@@ -1,20 +1,20 @@
 /*
     Copyright (C) 2016-19 Sebastian J. Wolf
 
-    This file is part of Wunderfitz.
+    This file is part of Dictionary.
 
-    Wunderfitz is free software: you can redistribute it and/or modify
+    Dictionary is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 2 of the License, or
     (at your option) any later version.
 
-    Wunderfitz is distributed in the hope that it will be useful,
+    Dictionary is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Wunderfitz. If not, see <http://www.gnu.org/licenses/>.
+    along with Dictionary. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import QtQuick 2.0
@@ -34,8 +34,8 @@ Page {
 
     Notification {
         id: importNotification
-        appName: "Wunderfitz"
-        appIcon: "/usr/share/icons/hicolor/256x256/apps/harbour-wunderfitz.png"
+        appName: "Dictionary"
+        appIcon: "/usr/share/icons/hicolor/256x256/apps/harbour-dictionary.png"
     }
 
     Connections {
@@ -152,7 +152,7 @@ Page {
                     }
 
                     Label {
-                        text: qsTr("Dict.cc does not allow other applications such as Wunderfitz to ship their dictionaries. Therefore, you must download them from dict.cc yourself. Use the Download link, follow the instructions and import the files here afterwards. The downloaded dict.cc ZIP files must be placed in the Downloads folder. If in doubt, use the SailfishOS E-Mail and Browser apps to store the downloads there automatically. After the import in Wunderfitz you can delete the ZIP archives. Please note that you only need to download one combination of two languages. For example if you use DE-EN, you don't need EN-DE as Wunderfitz always searches in both languages.")
+                        text: qsTr("Dict.cc does not allow other applications such as Dictionary to ship their dictionaries. Therefore, you must download them from dict.cc yourself. Use the Download link, follow the instructions and import the files here afterwards. The downloaded dict.cc ZIP files must be placed in the Downloads folder. If in doubt, use the SailfishOS E-Mail and Browser apps to store the downloads there automatically. After the import in Dictionary you can delete the ZIP archives. Please note that you only need to download one combination of two languages. For example if you use DE-EN, you don't need EN-DE as Dictionary always searches in both languages.")
                         font.pixelSize: Theme.fontSizeExtraSmall
                         wrapMode: Text.Wrap
                         width: parent.width - infoImage.width - (3 * infoRow.x)

@@ -4,8 +4,8 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Wunderfitz</source>
-        <translation>A Wunderfitz-ről</translation>
+        <source>About Dictionary</source>
+        <translation>A Dictionary-ről</translation>
     </message>
     <message>
         <source>By Sebastian J. Wolf</source>
@@ -56,8 +56,8 @@
         <translation>Ez a projekt a heinzelnisse.info-ról származó norvég-német szótárt használja. Köszönet a szerzőknek, Heiko Klein-nek és Julia Emmerich-nek a szótár GNU GPLv2 licenc feltételei alatti elérhetőségért!</translation>
     </message>
     <message>
-        <source>Wunderfitz was translated to several languages. Thanks to the contributors for making that happen!</source>
-        <translation>A Wunderfitz különböző nyelvekre van lefordítva. Köszönet a közreműködőknek, amiért ezt lehetővé tették!</translation>
+        <source>Dictionary was translated to several languages. Thanks to the contributors for making that happen!</source>
+        <translation>A Dictionary különböző nyelvekre van lefordítva. Köszönet a közreműködőknek, amiért ezt lehetővé tették!</translation>
     </message>
     <message>
         <source>This product is distributed by &lt;a href=&quot;https://werkwolf.eu&quot;&gt;WerkWolf OÜ&lt;/a&gt;.</source>
@@ -87,8 +87,8 @@
         <translation>Dict.cc importálás</translation>
     </message>
     <message>
-        <source>Dict.cc does not allow other applications such as Wunderfitz to ship their dictionaries. Therefore, you must download them from dict.cc yourself. Use the Download link, follow the instructions and import the files here afterwards. The downloaded dict.cc ZIP files must be placed in the Downloads folder. If in doubt, use the SailfishOS E-Mail and Browser apps to store the downloads there automatically. After the import in Wunderfitz you can delete the ZIP archives. Please note that you only need to download one combination of two languages. For example if you use DE-EN, you don&apos;t need EN-DE as Wunderfitz always searches in both languages.</source>
-        <translation>A Dict.cc nem engedélyezi más alkalmazások, mint a Wunderfitz, hogy az ő szótáraikat forgalmazza. Ezért saját magadnak kell letöltened a dict.cc-ről. Használd a letöltés linket, kövesd az utasításokat, majd utána importáld a fájlokat ide. A letöltött dict.cc ZIP fájlokat a Letöltések mappában kell elhelyezni. Ha nem vagy bizos magadban, használd a SailfishOS E-Mail és Böngésző alkalmazásokat a letöltések automatikusan itt történő tárolásához. A Wunderfitz-be való importálás után törölheted a ZIP archívumokat. Vedd figyelembe, hogy a két nyelv csak egy kombinációját kell letöltened. Ha például te a német-magyart használod, nincs szükség a magyar-németre is, mert a Wunderfitz mindig mindkét nyelvben keres.</translation>
+        <source>Dict.cc does not allow other applications such as Dictionary to ship their dictionaries. Therefore, you must download them from dict.cc yourself. Use the Download link, follow the instructions and import the files here afterwards. The downloaded dict.cc ZIP files must be placed in the Downloads folder. If in doubt, use the SailfishOS E-Mail and Browser apps to store the downloads there automatically. After the import in Dictionary you can delete the ZIP archives. Please note that you only need to download one combination of two languages. For example if you use DE-EN, you don&apos;t need EN-DE as Dictionary always searches in both languages.</source>
+        <translation>A Dict.cc nem engedélyezi más alkalmazások, mint a Dictionary, hogy az ő szótáraikat forgalmazza. Ezért saját magadnak kell letöltened a dict.cc-ről. Használd a letöltés linket, kövesd az utasításokat, majd utána importáld a fájlokat ide. A letöltött dict.cc ZIP fájlokat a Letöltések mappában kell elhelyezni. Ha nem vagy bizos magadban, használd a SailfishOS E-Mail és Böngésző alkalmazásokat a letöltések automatikusan itt történő tárolásához. A Dictionary-be való importálás után törölheted a ZIP archívumokat. Vedd figyelembe, hogy a két nyelv csak egy kombinációját kell letöltened. Ha például te a német-magyart használod, nincs szükség a magyar-németre is, mert a Dictionary mindig mindkét nyelvben keres.</translation>
     </message>
     <message>
         <source>Dictionary</source>
@@ -132,8 +132,8 @@
 <context>
     <name>TitlePage</name>
     <message>
-        <source>About Wunderfitz</source>
-        <translation>A Wunderfitz-ről</translation>
+        <source>About Dictionary</source>
+        <translation>A Dictionary-ről</translation>
     </message>
     <message>
         <source>Dictionaries</source>

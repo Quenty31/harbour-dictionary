@@ -1,4 +1,4 @@
-# Wunderfitz
+# Dictionary
 A mobile dictionary application for SailfishOS including the Heinzelnisse dictionary [heinzelnisse.info](http://www.heinzelnisse.info) and supporting [dict.cc](http://www.dict.cc) export files
 
 ## Author

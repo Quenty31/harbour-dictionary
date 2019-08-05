@@ -1,6 +1,6 @@
 #!/bin/bash
 
-app="harbour-wunderfitz"
+app="harbour-dictionary"
 
 for i in 86 108 128 172 256; do
     mkdir -p "../icons/${i}x$i"

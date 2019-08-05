@@ -1,20 +1,20 @@
 /*
     Copyright (C) 2016-19 Sebastian J. Wolf
 
-    This file is part of Wunderfitz.
+    This file is part of Dictionary.
 
-    Wunderfitz is free software: you can redistribute it and/or modify
+    Dictionary is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 2 of the License, or
     (at your option) any later version.
 
-    Wunderfitz is distributed in the hope that it will be useful,
+    Dictionary is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Wunderfitz. If not, see <http://www.gnu.org/licenses/>.
+    along with Dictionary. If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include "dictccimportworker.h"
@@ -119,7 +119,7 @@ QMap<QString,QString> DictCCImportWorker::getMetadata(QTextStream &inputStream) 
 
 void DictCCImportWorker::writeDictionary(QTextStream &inputStream, QMap<QString, QString> &metadata)
 {
-    QString databaseDirectory = getDirectory(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/harbour-wunderfitz");
+    QString databaseDirectory = getDirectory(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/harbour-dictionary");
     QString databaseFilePath = databaseDirectory + "/" + metadata.value("languages") + ".db";
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE", "connection" + metadata.value("languages"));
     database.setDatabaseName(databaseFilePath);
@@ -296,7 +296,7 @@ DictCCWord DictCCImportWorker::getDictCCWord(QString rawWord)
 
 QString DictCCImportWorker::getTempDirectory()
 {
-    QString tempDirectoryString = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + "/harbour-wunderfitz";
+    QString tempDirectoryString = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + "/harbour-dictionary";
     return getDirectory(tempDirectoryString);
 }
 

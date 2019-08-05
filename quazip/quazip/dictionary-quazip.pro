@@ -10,5 +10,5 @@ CONFIG(staticlib): DEFINES += QUAZIP_STATIC
 # Input
 include(quazip.pri)
 
-target.path=/usr/share/harbour-wunderfitz/lib
+target.path=/usr/share/harbour-dictionary/lib
 INSTALLS += target

@@ -28,7 +28,7 @@ Makefile*
 # Build files
 *.qm
 *.so.*
-src/harbour-wunderfitz
+src/harbour-dictionary
 documentation.list
 RPMS
 

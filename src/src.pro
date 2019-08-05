@@ -5,15 +5,15 @@ QT += sql core
 
 DEPENDPATH += . ../quazip/quazip
 INCLUDEPATH += . ../quazip/quazip
-QMAKE_LFLAGS += -Wl,-rpath,\\$${LITERAL_DOLLAR}$${LITERAL_DOLLAR}ORIGIN/../share/harbour-wunderfitz/lib
+QMAKE_LFLAGS += -Wl,-rpath,\\$${LITERAL_DOLLAR}$${LITERAL_DOLLAR}ORIGIN/../share/harbour-dictionary/lib
 
 INSTALLS += target
 target.path = /usr/bin/
 
-TARGET = harbour-wunderfitz
+TARGET = harbour-dictionary
 TEMPLATE = app
 
-SOURCES += harbour-wunderfitz.cpp \
+SOURCES += harbour-dictionary.cpp \
     databasemanager.cpp \
     heinzelnisseelement.cpp \
     heinzelnissemodel.cpp \

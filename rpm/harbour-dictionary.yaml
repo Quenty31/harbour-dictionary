@@ -1,4 +1,4 @@
-Name: harbour-wunderfitz
+Name: harbour-dictionary
 Summary: An offline dictionary (supporting dict.cc and Heinzelnisse)
 Version: 1.2.1
 Release: 1
@@ -12,7 +12,7 @@ License: LICENSE
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Wunderfitz is a mobile dictionary application, supporting the Heinzelnisse dictionary (Norwegian-German) and dict.cc export files.
+  Dictionary is a mobile dictionary application, supporting the Heinzelnisse dictionary (Norwegian-German) and dict.cc export files.
 Configure: none
 # The qtc5 builder inserts macros to allow QtCreator to have fine
 # control over qmake/make execution

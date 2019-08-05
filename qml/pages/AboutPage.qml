@@ -1,20 +1,20 @@
 /*
     Copyright (C) 2016-19 Sebastian J. Wolf
 
-    This file is part of Wunderfitz.
+    This file is part of Dictionary.
 
-    Wunderfitz is free software: you can redistribute it and/or modify
+    Dictionary is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 2 of the License, or
     (at your option) any later version.
 
-    Wunderfitz is distributed in the hope that it will be useful,
+    Dictionary is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Wunderfitz. If not, see <http://www.gnu.org/licenses/>.
+    along with Dictionary. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import QtQuick 2.0
@@ -36,12 +36,12 @@ Page {
             spacing: Theme.paddingLarge
 
             PageHeader {
-                title: qsTr("About Wunderfitz")
+                title: qsTr("About Dictionary")
             }
 
             Image {
-                id: wunderfitzImage
-                source: "../../images/wunderfitz.png"
+                id: dictionaryImage
+                source: "../../images/dictionary.png"
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
@@ -52,7 +52,7 @@ Page {
             }
 
             Label {
-                text: "Wunderfitz 1.2.1"
+                text: "Dictionary 1.2.1"
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: Theme.fontSizeExtraLarge
                 anchors {
@@ -127,14 +127,14 @@ Page {
             }
 
             Text {
-                text: "<a href=\"https://github.com/Wunderfitz/harbour-wunderfitz\">" + qsTr("Sources on GitHub") + "</a>"
+                text: "<a href=\"https://github.com/Dictionary/harbour-dictionary\">" + qsTr("Sources on GitHub") + "</a>"
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
                 font.pixelSize: Theme.fontSizeSmall
                 linkColor: Theme.highlightColor
 
-                onLinkActivated: Qt.openUrlExternally("https://github.com/Wunderfitz/harbour-wunderfitz")
+                onLinkActivated: Qt.openUrlExternally("https://github.com/Dictionary/harbour-dictionary")
             }
 
             SectionHeader {
@@ -144,7 +144,7 @@ Page {
             Label {
                 x: Theme.horizontalPageMargin
                 width: parent.width  - ( 2 * Theme.horizontalPageMargin )
-                text: qsTr("Wunderfitz was translated to several languages. Thanks to the contributors for making that happen!")
+                text: qsTr("Dictionary was translated to several languages. Thanks to the contributors for making that happen!")
                 font.pixelSize: Theme.fontSizeExtraSmall
                 wrapMode: Text.Wrap
                 anchors {

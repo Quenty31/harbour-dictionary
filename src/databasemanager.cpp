@@ -1,20 +1,20 @@
 /*
     Copyright (C) 2016-19 Sebastian J. Wolf
 
-    This file is part of Wunderfitz.
+    This file is part of Dictionary.
 
-    Wunderfitz is free software: you can redistribute it and/or modify
+    Dictionary is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 2 of the License, or
     (at your option) any later version.
 
-    Wunderfitz is distributed in the hope that it will be useful,
+    Dictionary is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Wunderfitz. If not, see <http://www.gnu.org/licenses/>.
+    along with Dictionary. If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include <QDebug>
@@ -35,7 +35,7 @@ DatabaseManager::DatabaseManager(QObject *parent) : QObject(parent) {
     connect(searchWorker, SIGNAL(searchCompleted(QString)), this, SLOT(handleSearchCompleted(QString)));
 
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("/usr/share/harbour-wunderfitz/db/heinzelliste.db");
+    database.setDatabaseName("/usr/share/harbour-dictionary/db/heinzelliste.db");
     dictionaryId = DictionaryModel::heinzelnisseId;
 
     if (!database.open()) {

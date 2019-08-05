@@ -4,8 +4,8 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Wunderfitz</source>
-        <translation>Info su Wunderfitz</translation>
+        <source>About Dictionary</source>
+        <translation>Info su Dictionary</translation>
     </message>
     <message>
         <source>By Sebastian J. Wolf</source>
@@ -56,8 +56,8 @@
         <translation>Questo progetto usa il dizionario norvegese-tedesco di heinzelnisse.info. - Grazie agli autori Heiko Klein e Julia Emmerich per aver reso il dizionario disponibile sotto licenza GNU CPLv2!</translation>
     </message>
     <message>
-        <source>Wunderfitz was translated to several languages. Thanks to the contributors for making that happen!</source>
-        <translation>Wunderfitz è stato tradotto in diverse lingue. Grazie ai traduttori per averlo reso possibile!</translation>
+        <source>Dictionary was translated to several languages. Thanks to the contributors for making that happen!</source>
+        <translation>Dictionary è stato tradotto in diverse lingue. Grazie ai traduttori per averlo reso possibile!</translation>
     </message>
     <message>
         <source>This product is distributed by &lt;a href=&quot;https://werkwolf.eu&quot;&gt;WerkWolf OÜ&lt;/a&gt;.</source>
@@ -87,8 +87,8 @@
         <translation>Importazione da dict.cc</translation>
     </message>
     <message>
-        <source>Dict.cc does not allow other applications such as Wunderfitz to ship their dictionaries. Therefore, you must download them from dict.cc yourself. Use the Download link, follow the instructions and import the files here afterwards. The downloaded dict.cc ZIP files must be placed in the Downloads folder. If in doubt, use the SailfishOS E-Mail and Browser apps to store the downloads there automatically. After the import in Wunderfitz you can delete the ZIP archives. Please note that you only need to download one combination of two languages. For example if you use DE-EN, you don&apos;t need EN-DE as Wunderfitz always searches in both languages.</source>
-        <translation>Dict.cc non permette ad applicazioni di terze parti come Wunderfitz di includere i propri dizionari. Devi perciò scaricarli da dict.cc personalmente. Tocca il link di download qui sotto, segui le istruzioni sul sito e quindi importa i file in Wunderfitz. I file ZIP scaricati da dict.cc devono essere scaricati nella cartella Downloads. In caso di dubbi, usa le applicazioni E-Mail e Browser di SailfishOS per salvare automaticamente i file nella giusta posizione. Dopo l&apos;importazione in Wunderfitz, puoi cancellare gli archivi ZIP. Nota: è necessario scaricare solo una combinazione di due lingue. Per esempio, se usi IT-EN, non hai bisogno di EN-IT poiché Wunderfitz cerca sempre in entrambe le lingue.</translation>
+        <source>Dict.cc does not allow other applications such as Dictionary to ship their dictionaries. Therefore, you must download them from dict.cc yourself. Use the Download link, follow the instructions and import the files here afterwards. The downloaded dict.cc ZIP files must be placed in the Downloads folder. If in doubt, use the SailfishOS E-Mail and Browser apps to store the downloads there automatically. After the import in Dictionary you can delete the ZIP archives. Please note that you only need to download one combination of two languages. For example if you use DE-EN, you don&apos;t need EN-DE as Dictionary always searches in both languages.</source>
+        <translation>Dict.cc non permette ad applicazioni di terze parti come Dictionary di includere i propri dizionari. Devi perciò scaricarli da dict.cc personalmente. Tocca il link di download qui sotto, segui le istruzioni sul sito e quindi importa i file in Dictionary. I file ZIP scaricati da dict.cc devono essere scaricati nella cartella Downloads. In caso di dubbi, usa le applicazioni E-Mail e Browser di SailfishOS per salvare automaticamente i file nella giusta posizione. Dopo l&apos;importazione in Dictionary, puoi cancellare gli archivi ZIP. Nota: è necessario scaricare solo una combinazione di due lingue. Per esempio, se usi IT-EN, non hai bisogno di EN-IT poiché Dictionary cerca sempre in entrambe le lingue.</translation>
     </message>
     <message>
         <source>Dictionary</source>
@@ -132,8 +132,8 @@
 <context>
     <name>TitlePage</name>
     <message>
-        <source>About Wunderfitz</source>
-        <translation>Info su Wunderfitz</translation>
+        <source>About Dictionary</source>
+        <translation>Info su Dictionary</translation>
     </message>
     <message>
         <source>Dictionaries</source>
