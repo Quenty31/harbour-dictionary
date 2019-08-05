@@ -1,5 +1,6 @@
 /*
     Copyright (C) 2016-19 Sebastian J. Wolf
+                  2019    Mirian Margiani
 
     This file is part of Dictionary.
 
