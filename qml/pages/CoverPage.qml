@@ -22,7 +22,6 @@ import Sailfish.Silica 1.0
 import "."
 
 CoverBackground {
-
     Image {
         source: "../../images/background.png"
         anchors {
@@ -36,7 +35,7 @@ CoverBackground {
         }
 
         fillMode: Image.PreserveAspectFit
-        opacity: 0.1
+        opacity: 0.3
     }
 
     SilicaListView {
