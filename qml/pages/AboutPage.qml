@@ -1,5 +1,6 @@
 /*
     Copyright (C) 2016-19 Sebastian J. Wolf
+                  2019    Mirian Margiani
 
     This file is part of Dictionary.
 
@@ -73,43 +74,11 @@ Page {
             }
 
             Label {
-                text: qsTr("By Sebastian J. Wolf")
+                text: qsTr("This is a fork of Wunderfitz to make it work purely offline.")
                 font.pixelSize: Theme.fontSizeSmall
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
-            }
-
-            Text {
-                text: "<a href=\"mailto:contact@werkwolf.eu\">" + qsTr("Send E-Mail") + "</a>"
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                }
-                font.pixelSize: Theme.fontSizeSmall
-                linkColor: Theme.highlightColor
-
-                onLinkActivated: Qt.openUrlExternally("mailto:contact@werkwolf.eu")
-            }
-
-            Separator {
-                width: parent.width
-                color: Theme.primaryColor
-                horizontalAlignment: Qt.AlignHCenter
-            }
-
-            Text {
-                wrapMode: Text.Wrap
-                width: parent.width - ( 2 * Theme.horizontalPageMargin )
-                text: qsTr("This product is distributed by <a href=\"https://werkwolf.eu\">WerkWolf OÜ</a>.")
-                font.pixelSize: Theme.fontSizeSmall
-                linkColor: Theme.highlightColor
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                }
-                color: Theme.primaryColor
-                textFormat: Text.StyledText
-                horizontalAlignment: Text.AlignHCenter
-                onLinkActivated: Qt.openUrlExternally(link);
             }
 
             Separator {
@@ -127,14 +96,14 @@ Page {
             }
 
             Text {
-                text: "<a href=\"https://github.com/Dictionary/harbour-dictionary\">" + qsTr("Sources on GitHub") + "</a>"
+                text: "<a href=\"https://github.com/ichthyosaurus/harbour-dictionary\">" + qsTr("Sources on GitHub") + "</a>"
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
                 font.pixelSize: Theme.fontSizeSmall
                 linkColor: Theme.highlightColor
 
-                onLinkActivated: Qt.openUrlExternally("https://github.com/Dictionary/harbour-dictionary")
+                onLinkActivated: Qt.openUrlExternally("https://github.com/ichthyosaurus/harbour-dictionary")
             }
 
             SectionHeader {
@@ -155,7 +124,7 @@ Page {
             Label {
                 x: Theme.horizontalPageMargin
                 width: parent.width  - ( 2 * Theme.horizontalPageMargin )
-                text: "d9h02f, Carlos Gonzales, Åke Engelbrektson, atlochowski, Szabó Géza, Alessandro Pra'"
+                text: "d9h02f, Carlos Gonzales, Åke Engelbrektson, atlochowski, Szabó Géza, Alessandro Pra', Mirian Margiani"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.Wrap
                 anchors {
@@ -244,11 +213,5 @@ Page {
 
             VerticalScrollDecorator {}
         }
-
     }
 }
-
-
-
-
-

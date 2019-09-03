@@ -1,4 +1,5 @@
 #!/bin/bash
+# 2019, by ichthyosaurus (https://github.com/ichthyosaurus)
 
 app="harbour-dictionary"
 

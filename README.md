@@ -1,9 +1,6 @@
 # Dictionary
 A mobile dictionary application for SailfishOS including the Heinzelnisse dictionary [heinzelnisse.info](http://www.heinzelnisse.info) and supporting [dict.cc](http://www.dict.cc) export files
 
-## Author
-Sebastian J. Wolf [sebastian@ygriega.de](mailto:sebastian@ygriega.de)
-
 ## License
 Licensed under GNU GPLv2
 
@@ -16,6 +13,12 @@ Licensed under GNU GPLv2
 - Swedish: Åke Engelbrektson
 
 ## Credits
+Original author
+- Sebastian J. Wolf [sebastian@ygriega.de](mailto:sebastian@ygriega.de)
+
+Forked by
+- [ichthyosaurus](https://github.com/ichthyosaurus)
+
 Code contributions
 - [zwieberl](https://github.com/zwieberl)
 
