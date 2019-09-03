@@ -8,10 +8,6 @@
         <translation>Acerca de</translation>
     </message>
     <message>
-        <source>By Sebastian J. Wolf</source>
-        <translation>Por Sebastian J. Wolf</translation>
-    </message>
-    <message>
         <source>Credits</source>
         <translation>Créditos</translation>
     </message>
@@ -22,10 +18,6 @@
     <message>
         <source>Sources on GitHub</source>
         <translation>Código fuente</translation>
-    </message>
-    <message>
-        <source>Send E-Mail</source>
-        <translation>Enviar Correo-E</translation>
     </message>
     <message>
         <source>Open heinzelnisse.info</source>
@@ -60,7 +52,7 @@
         <translation>Dictionary es traducido a varios lenguajes. Gracias a los contribuyentes por hacer esto realidad!</translation>
     </message>
     <message>
-        <source>This product is distributed by &lt;a href=&quot;https://werkwolf.eu&quot;&gt;WerkWolf OÜ&lt;/a&gt;.</source>
+        <source>This is a fork of Wunderfitz to make it work purely offline.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -8,10 +8,6 @@
         <translation>O Dictionary</translation>
     </message>
     <message>
-        <source>By Sebastian J. Wolf</source>
-        <translation>stworzony przez Sebastian J. Wolf</translation>
-    </message>
-    <message>
         <source>Credits</source>
         <translation>Uznanie</translation>
     </message>
@@ -22,10 +18,6 @@
     <message>
         <source>Sources on GitHub</source>
         <translation>Źródła na GitHub</translation>
-    </message>
-    <message>
-        <source>Send E-Mail</source>
-        <translation>Wyślij email</translation>
     </message>
     <message>
         <source>Open heinzelnisse.info</source>
@@ -60,7 +52,7 @@
         <translation>Dictionary został przetłumaczony na kilka języków. Podziękowania dla autorów za to, że tak się stało!</translation>
     </message>
     <message>
-        <source>This product is distributed by &lt;a href=&quot;https://werkwolf.eu&quot;&gt;WerkWolf OÜ&lt;/a&gt;.</source>
+        <source>This is a fork of Wunderfitz to make it work purely offline.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

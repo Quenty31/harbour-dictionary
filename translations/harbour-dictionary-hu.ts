@@ -8,10 +8,6 @@
         <translation>A Dictionary-ről</translation>
     </message>
     <message>
-        <source>By Sebastian J. Wolf</source>
-        <translation>Készítette Sebastian J. Wolf</translation>
-    </message>
-    <message>
         <source>Credits</source>
         <translation>Stáblista</translation>
     </message>
@@ -22,10 +18,6 @@
     <message>
         <source>Sources on GitHub</source>
         <translation>Források a GitHub-on</translation>
-    </message>
-    <message>
-        <source>Send E-Mail</source>
-        <translation>E-Mail küldés</translation>
     </message>
     <message>
         <source>Open heinzelnisse.info</source>
@@ -60,7 +52,7 @@
         <translation>A Dictionary különböző nyelvekre van lefordítva. Köszönet a közreműködőknek, amiért ezt lehetővé tették!</translation>
     </message>
     <message>
-        <source>This product is distributed by &lt;a href=&quot;https://werkwolf.eu&quot;&gt;WerkWolf OÜ&lt;/a&gt;.</source>
+        <source>This is a fork of Wunderfitz to make it work purely offline.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
