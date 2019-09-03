@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>This is a fork of Wunderfitz to make it work purely offline.</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese App ist ein Fork von Wunderfitz, der keinen Internetzugang mehr benötigt.</translation>
     </message>
 </context>
 <context>
