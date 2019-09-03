@@ -18,8 +18,8 @@ Summary:    An offline dictionary (supporting dict.cc and Heinzelnisse)
 Version:    1.2.1
 Release:    1
 Group:      Qt/Qt
-License:    LICENSE
-URL:        http://www.werkwolf.eu/
+License:    GPLv2
+URL:        https://github.com/ichthyosaurus/harbour-dictionary
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-dictionary.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
