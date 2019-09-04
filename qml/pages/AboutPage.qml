@@ -53,7 +53,7 @@ Page {
             }
 
             Label {
-                text: "Dictionary 1.2.1"
+                text: "Dictionary %1".arg(versionNumber)
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: Theme.fontSizeExtraLarge
                 anchors {

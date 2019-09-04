@@ -42,6 +42,7 @@ int main(int argc, char *argv[])
     ctxt->setContextProperty("dictionaryModel", &dictionaryModel);
     ctxt->setContextProperty("heinzelnisseModel", &dictionaryModel.heinzelnisseModel);
     ctxt->setContextProperty("dictCCImporterModel", &dictionaryModel.dictCCImporterModel);
+    ctxt->setContextProperty("versionNumber", QString(RELEASE_VERSION));
 
     view->setSource(SailfishApp::pathTo("qml/harbour-dictionary.qml"));
     view->show();
