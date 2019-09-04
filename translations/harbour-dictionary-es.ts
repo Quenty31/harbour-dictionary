@@ -16,10 +16,6 @@
         <translation>Licencia GPLv2</translation>
     </message>
     <message>
-        <source>Sources on GitHub</source>
-        <translation>Código fuente</translation>
-    </message>
-    <message>
         <source>Open heinzelnisse.info</source>
         <translation>heinzelnisse.info</translation>
     </message>
@@ -52,7 +48,15 @@
         <translation>Dictionary es traducido a varios lenguajes. Gracias a los contribuyentes por hacer esto realidad!</translation>
     </message>
     <message>
-        <source>This is a fork of Wunderfitz to make it work purely offline.</source>
+        <source>This is a fork of Wunderfitz without any online functionality.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Forked sources on GitHub</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Original sources on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

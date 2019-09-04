@@ -16,10 +16,6 @@
         <translation>Kiadva a GNU GPLv2 licenc alatt</translation>
     </message>
     <message>
-        <source>Sources on GitHub</source>
-        <translation>Források a GitHub-on</translation>
-    </message>
-    <message>
         <source>Open heinzelnisse.info</source>
         <translation>A heinzelnisse.info megnyitása</translation>
     </message>
@@ -52,7 +48,15 @@
         <translation>A Dictionary különböző nyelvekre van lefordítva. Köszönet a közreműködőknek, amiért ezt lehetővé tették!</translation>
     </message>
     <message>
-        <source>This is a fork of Wunderfitz to make it work purely offline.</source>
+        <source>This is a fork of Wunderfitz without any online functionality.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Forked sources on GitHub</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Original sources on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

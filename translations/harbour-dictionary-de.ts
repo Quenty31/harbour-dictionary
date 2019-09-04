@@ -16,10 +16,6 @@
         <translation>Lizenziert unter der GNU GPLv2</translation>
     </message>
     <message>
-        <source>Sources on GitHub</source>
-        <translation>Quelltexte auf GitHub</translation>
-    </message>
-    <message>
         <source>Open heinzelnisse.info</source>
         <translation>Heinzelnisse.info öffnen</translation>
     </message>
@@ -52,8 +48,16 @@
         <translation>Dictionary wurde in verschiedene Sprachen übersetzt. Vielen Dank an die Beitragenden, die das möglich gemacht haben!</translation>
     </message>
     <message>
-        <source>This is a fork of Wunderfitz to make it work purely offline.</source>
-        <translation>Diese App ist ein Fork von Wunderfitz, der keinen Internetzugang mehr benötigt.</translation>
+        <source>This is a fork of Wunderfitz without any online functionality.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Forked sources on GitHub</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Original sources on GitHub</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
