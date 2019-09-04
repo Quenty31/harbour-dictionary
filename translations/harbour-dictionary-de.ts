@@ -49,15 +49,15 @@
     </message>
     <message>
         <source>This is a fork of Wunderfitz without any online functionality.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dies ist ein Fork von Wunderfitz ohne alle Online-Funktionen.</translation>
     </message>
     <message>
         <source>Forked sources on GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Fork-Quellcode auf GitHub</translation>
     </message>
     <message>
         <source>Original sources on GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Original-Quellcode auf GitHub</translation>
     </message>
 </context>
 <context>
