@@ -67,7 +67,7 @@ Page {
                 width: parent.width - ( 2 * Theme.horizontalPageMargin )
                 horizontalAlignment: Text.AlignHCenter
                 text: qsTr("A mobile dictionary application for offline use including the Heinzelnisse database and supporting dict.cc export files.") + "\n" +
-                      qsTr("This is a fork of Wunderfitz to make it work purely offline.")
+                      qsTr("This is a fork of Wunderfitz without any online functionality.")
                 font.pixelSize: Theme.fontSizeSmall
                 anchors {
                     horizontalCenter: parent.horizontalCenter
