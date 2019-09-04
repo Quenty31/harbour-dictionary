@@ -37,3 +37,13 @@
 
 * Tue Apr 23 2019 <sebastian@ygriega.de> 1.2.1
 - New ComboBox header (thanks to zwieberl)
+
+* Wed Sep 04 2019 <mirian@margiani.ch> 1.2.1 [fork]
+- Forked the project
+- Removed all online functionality (cloud and everything Wagnis-related)
+- New icon
+
+* Wed Sep 04 2019 <mirian@margiani.ch> 1.2.2
+- Improved icon
+- Improved about page
+- Improved build process
