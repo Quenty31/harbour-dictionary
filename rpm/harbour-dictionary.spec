@@ -14,7 +14,7 @@ Name:       harbour-dictionary
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
-Summary:    An offline dictionary (supporting dict.cc and Heinzelnisse)
+Summary:    An offline dictionary (supporting dict.cc and Heinzelnisse) [fork of Wunderfitz]
 Version:    1.2.1
 Release:    1
 Group:      Qt/Qt
@@ -31,7 +31,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Dictionary is a mobile dictionary application, supporting the Heinzelnisse dictionary (Norwegian-German) and dict.cc export files.
+Dictionary is a mobile dictionary application, supporting the Heinzelnisse dictionary (Norwegian-German) and dict.cc export files. (This is a fork of Wunderfitz.)
 
 
 %prep

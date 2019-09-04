@@ -1,5 +1,5 @@
 Name: harbour-dictionary
-Summary: An offline dictionary (supporting dict.cc and Heinzelnisse)
+Summary: An offline dictionary (supporting dict.cc and Heinzelnisse) [fork of Wunderfitz]
 Version: 1.2.1
 Release: 1
 # The contents of the Group field should be one of the groups listed here:
@@ -12,7 +12,7 @@ License: GPLv2
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Dictionary is a mobile dictionary application, supporting the Heinzelnisse dictionary (Norwegian-German) and dict.cc export files.
+  Dictionary is a mobile dictionary application, supporting the Heinzelnisse dictionary (Norwegian-German) and dict.cc export files. (This is a fork of Wunderfitz.)
 Configure: none
 # The qtc5 builder inserts macros to allow QtCreator to have fine
 # control over qmake/make execution
