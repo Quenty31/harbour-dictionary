@@ -89,7 +89,7 @@ Page {
             }
 
             Text {
-                text: "<a href=\"https://github.com/ichthyosaurus/harbour-dictionary\">" + qsTr("Sources on GitHub") + "</a>"
+                text: "<a href=\"https://github.com/ichthyosaurus/harbour-dictionary\">" + qsTr("Forked sources on GitHub") + "</a>"
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
@@ -97,6 +97,17 @@ Page {
                 linkColor: Theme.highlightColor
 
                 onLinkActivated: Qt.openUrlExternally("https://github.com/ichthyosaurus/harbour-dictionary")
+            }
+
+            Text {
+                text: "<a href=\"https://github.com/Wunderfitz/harbour-wunderfitz\">" + qsTr("Original sources on GitHub") + "</a>"
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                }
+                font.pixelSize: Theme.fontSizeSmall
+                linkColor: Theme.highlightColor
+
+                onLinkActivated: Qt.openUrlExternally("https://github.com/Wunderfitz/harbour-wunderfitz")
             }
 
             SectionHeader {
@@ -117,7 +128,7 @@ Page {
             Label {
                 x: Theme.horizontalPageMargin
                 width: parent.width  - ( 2 * Theme.horizontalPageMargin )
-                text: "d9h02f, Carlos Gonzales, Åke Engelbrektson, atlochowski, Szabó Géza, Alessandro Pra', Mirian Margiani"
+                text: "Sebastian Wolf, d9h02f, Carlos Gonzales, Åke Engelbrektson, atlochowski, Szabó Géza, Alessandro Pra', Mirian Margiani"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.Wrap
                 anchors {
