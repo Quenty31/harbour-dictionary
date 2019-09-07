@@ -29,7 +29,7 @@
     </message>
     <message>
         <source>This application supports dict.cc dictionary export files. Thanks to Paul Hemetsberger and the dict.cc team for providing the dictionaries!</source>
-        <translation>This application supports dict.cc dictionary export files. Thanks to Paul Hemetsberger and the dict.cc team for providing the dictionaries!</translation>
+        <translation>Cette application est compatible avec l'exportation de fichiers de dictionnaire de dict.cc Merci à Paul Hemetsberger et à l'équipe de dict.cc team pour la fourniture des dictionnaires !</translation>
     </message>
     <message>
         <source>This application uses the QuaZIP library, version 0.7.2, to extract ZIP archives. Thanks to Sergey A. Tachenov and the QuaZIP contributors for making it so simple to extract ZIP files with Qt!</source>
@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>A mobile dictionary application for offline use including the Heinzelnisse database and supporting dict.cc export files.</source>
-        <translation>A mobile dictionary application for offline use including the Heinzelnisse database and supporting dict.cc export files.</translation>
+        <translation>Application mobile de dictionnaires hors connexion qui inclut la base de données Heinzelnisse et qui est compatible avec les fichiers d'export de dict.cc.</translation>
     </message>
     <message>
         <source>This project uses the Norwegian-German dictionary from heinzelnisse.info - Thanks to the authors Heiko Klein and Julia Emmerich for making the dictionary available under the conditions of the GNU GPLv2!</source>
@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>Dictionary was translated to several languages. Thanks to the contributors for making that happen!</source>
-        <translation>Dictionary was translated to several languages. Thanks to the contributors for making that happen!</translation>
+        <translation>Dictionary est traduit dans de nombreuses langues. Merci aux contributeurs d'avoir permis cela !</translation>
     </message>
     <message>
         <source>This is a fork of Wunderfitz without any online functionality.</source>
