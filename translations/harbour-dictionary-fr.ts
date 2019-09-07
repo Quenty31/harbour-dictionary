@@ -29,11 +29,11 @@
     </message>
     <message>
         <source>This application supports dict.cc dictionary export files. Thanks to Paul Hemetsberger and the dict.cc team for providing the dictionaries!</source>
-        <translation>Cette application est compatible avec l'exportation de fichiers de dictionnaire de dict.cc Merci à Paul Hemetsberger et à l'équipe de dict.cc team pour la fourniture des dictionnaires !</translation>
+        <translation>Cette application est compatible avec l'exportation de fichiers de dictionnaire de dict.cc Merci à Paul Hemetsberger et à l'équipe de dict.cc pour la fourniture des dictionnaires !</translation>
     </message>
     <message>
         <source>This application uses the QuaZIP library, version 0.7.2, to extract ZIP archives. Thanks to Sergey A. Tachenov and the QuaZIP contributors for making it so simple to extract ZIP files with Qt!</source>
-        <translation>This application uses the QuaZIP library, version 0.7.2, to extract ZIP archives. Thanks to Sergey A. Tachenov and the QuaZIP contributors for making it so simple to extract ZIP files with Qt!</translation>
+        <translation>Cette application utilise la bibliothèque QuaZIP, version 0.7.2, pour extraire les fichiers ZIP. Merci à Sergey A. Tachenov et aux contributeurs de QuaZIP d'avoir permis la décompression de fichiers ZIP si simple avec Qt !</translation>
     </message>
     <message>
         <source>A mobile dictionary application for offline use including the Heinzelnisse database and supporting dict.cc export files.</source>
@@ -41,7 +41,7 @@
     </message>
     <message>
         <source>This project uses the Norwegian-German dictionary from heinzelnisse.info - Thanks to the authors Heiko Klein and Julia Emmerich for making the dictionary available under the conditions of the GNU GPLv2!</source>
-        <translation>This project uses the Norwegian-German dictionary from heinzelnisse.info - Thanks to the authors Heiko Klein and Julia Emmerich for making the dictionary available under the conditions of the GNU GPLv2!</translation>
+        <translation>Ce projet utilise le dictionnaire Norvégien-Allemand de heinzelnisse.info - Merci aux auteurs Heiko Klein et Julia Emmerich d'avoir rendu le dictionnaire disponible sous les termes de la licence GNU GPLv2 !</translation>
     </message>
     <message>
         <source>Dictionary was translated to several languages. Thanks to the contributors for making that happen!</source>
@@ -96,7 +96,7 @@
     </message>
     <message>
         <source>Delete selected dictionary</source>
-        <translation>Suprimer le dictionnaire sélectionné</translation>
+        <translation>Supprimer le dictionnaire sélectionné</translation>
     </message>
     <message>
         <source>Dictionary %1 successfully imported</source>
@@ -104,7 +104,7 @@
     </message>
     <message>
         <source>Deleting dictionary %1</source>
-        <translation>Supression du dictionnaire %1</translation>
+        <translation>Suppression du dictionnaire %1</translation>
     </message>
     <message>
         <source>Dictionary %1 imported</source>
@@ -141,7 +141,7 @@
     </message>
     <message>
         <source>Searching...</source>
-        <translation>SRecherche...</translation>
+        <translation>Recherche...</translation>
     </message>
     <message>
         <source>No results found</source>
