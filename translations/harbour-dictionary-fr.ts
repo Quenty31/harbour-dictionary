@@ -49,11 +49,11 @@
     </message>
     <message>
         <source>This is a fork of Wunderfitz without any online functionality.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il s'agit d'une version dérivée de Wunderfitz dépourvue des fonctionnalités en ligne</translation>
     </message>
     <message>
         <source>Forked sources on GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichiers sources modifiés sur GitHub</translation>
     </message>
     <message>
         <source>Original sources on GitHub</source>
@@ -76,11 +76,11 @@
     </message>
     <message>
         <source>Import dict.cc ZIP archives</source>
-        <translation>Import dict.cc ZIP archives</translation>
+        <translation>Importer un fichier ZIP dict.cc</translation>
     </message>
     <message>
         <source>Dict.cc Import</source>
-        <translation>Dict.cc Import</translation>
+        <translation>Import Dict.cc </translation>
     </message>
     <message>
         <source>Dict.cc does not allow other applications such as Dictionary to ship their dictionaries. Therefore, you must download them from dict.cc yourself. Use the Download link, follow the instructions and import the files here afterwards. The downloaded dict.cc ZIP files must be placed in the Downloads folder. If in doubt, use the SailfishOS E-Mail and Browser apps to store the downloads there automatically. After the import in Dictionary you can delete the ZIP archives. Please note that you only need to download one combination of two languages. For example if you use DE-EN, you don&apos;t need EN-DE as Dictionary always searches in both languages.</source>
@@ -92,37 +92,37 @@
     </message>
     <message>
         <source>Choose the active dictionary here</source>
-        <translation>Choose the active dictionary here</translation>
+        <translation>Choisissez le dictionnaire actif ici</translation>
     </message>
     <message>
         <source>Delete selected dictionary</source>
-        <translation>Delete selected dictionary</translation>
+        <translation>Suprimer le dictionnaire sélectionné</translation>
     </message>
     <message>
         <source>Dictionary %1 successfully imported</source>
-        <translation>Dictionary %1 successfully imported</translation>
+        <translation>Dictionnaire %1 correctement importé</translation>
     </message>
     <message>
         <source>Deleting dictionary %1</source>
-        <translation>Deleting dictionary %1</translation>
+        <translation>Supression du dictionnaire %1</translation>
     </message>
     <message>
         <source>Dictionary %1 imported</source>
-        <translation>Dictionary %1 imported</translation>
+        <translation>Dictionnaire %1 importé</translation>
     </message>
 </context>
 <context>
     <name>DictionaryButton</name>
     <message>
         <source>Dictionaries</source>
-        <translation>Dictionaries</translation>
+        <translation>Dictionnaires</translation>
     </message>
 </context>
 <context>
     <name>LoadingIndicator</name>
     <message>
         <source>Loading...</source>
-        <translation>Loading...</translation>
+        <translation>Chargement...</translation>
     </message>
 </context>
 <context>
@@ -137,7 +137,7 @@
     </message>
     <message>
         <source>Pull down the menu to import and change your dictionaries</source>
-        <translation>Pull down the menu to import and change your dictionaries</translation>
+        <translation>Tirez le menu vers le bas pour importer et modifier vos dictionnaires</translation>
     </message>
     <message>
         <source>Searching...</source>
